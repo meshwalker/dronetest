@@ -1,4 +1,5 @@
 debug: true
+
 build:
   image: golang
   pull: true
@@ -6,11 +7,12 @@ build:
     - go get
     - go build
     - echo 'cool'
+
 publish:
-docker:
-  registry: quay.io
-  username: $$QUAY_USERNAME
-  password: $$QUAY_PASSWORD
-  email: richard@jentzsch.me
-  repo: norbell/dronetest
-  file: Dockerfile
+  docker:
+    registry: quay.io
+    username: $$QUAY_USERNAME
+    password: $$QUAY_PASSWORD
+    email: richard@jentzsch.me
+    repo: norbell/dronetest
+    file: Dockerfile
