@@ -1,10 +1,11 @@
 debug: true
 build:
   image: golang
+  pull: true
   commands:
     - go get
     - go build
-    - go test
+    - echo 'cool'
 publish:
 docker:
   registry: quay.io
