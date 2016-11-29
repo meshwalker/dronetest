@@ -1,4 +1,0 @@
-echo 'Github config'
-go get
-go build
-echo 'cool'
